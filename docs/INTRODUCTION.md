@@ -1,6 +1,8 @@
-# FieldOps AI — Introduction
+# FieldOps — Introduction
 
-FieldOps AI is an interactive portfolio application for distributed AI data collection operations. It connects staffing, quality assurance, delivery commitments and direct cost so a manager can investigate a risk and test a corrective action.
+FieldOps is a staffing and operations management app for teams working across different locations. It helps managers decide who should work on each project, identify staffing or quality-review shortages, and assess whether accepted work will be delivered on time.
+
+The demonstration business collects recordings used to train AI. This describes the industry being served; the app itself uses predefined rules and calculations rather than AI models. Staffing decisions remain with the manager.
 
 The demonstration models 60 fictional workers, three client projects, equipment/connectivity exceptions and limited QA capacity. Managers can search the workforce, assign eligible reserve agents, add review capacity, update incident status, compare scenarios, and export a client report. Changes persist in the current browser and can be reset.
 

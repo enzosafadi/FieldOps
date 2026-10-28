@@ -1,4 +1,4 @@
-# FieldOps AI — Validation & Demonstration
+# FieldOps — Validation & Demonstration
 
 Verified October 28, 2026. All operational values and outcomes below are simulated.
 

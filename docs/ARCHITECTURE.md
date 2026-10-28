@@ -1,4 +1,4 @@
-# FieldOps AI — Architecture
+# FieldOps — Architecture
 
 ## Implemented application
 

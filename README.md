@@ -1,8 +1,10 @@
-# FieldOps AI
+# FieldOps
 
-### Workforce, Quality & Delivery Operations
+### Staffing & Operations Management
 
-An interactive operations app for a fictional AI data collection provider. Investigate delivery risks, allocate qualified reserve workers, expand QA capacity, manage incidents, and export client reports.
+An interactive staffing and operations app for teams working across different locations. Assign available workers to projects, monitor quality checks, identify delivery risks, and compare the cost of corrective actions.
+
+The example business collects recordings used to train AI. That is the client industry: FieldOps itself uses predefined rules and calculations, with managers making staffing decisions.
 
 **All data and outcomes are simulated.** This is an independent portfolio project, not actual client work.
 
@@ -12,7 +14,7 @@ The hosted app is owner-private and requires the owner's ChatGPT access. The rev
 
 ## Operations overview
 
-![FieldOps AI operations dashboard with staffing, accepted delivery, QA and risk indicators](docs/screenshots/Overview.jpg)
+![FieldOps operations dashboard with staffing, accepted delivery, QA and risk indicators](docs/screenshots/Overview.jpg)
 
 ## Try a real operational decision
 

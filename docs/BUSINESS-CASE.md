@@ -1,4 +1,4 @@
-# FieldOps AI — Business Case
+# FieldOps — Business Case
 
 Simulated portfolio project · Project definition stage
 
