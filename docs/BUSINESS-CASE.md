@@ -37,3 +37,10 @@ No monetary ROI or percentage improvement is claimed before the model is impleme
 
 Compare baseline and intervention runs using the same demand, starting state, and external incident schedule. Compare on-time delivery, accepted volume, first-pass acceptance, QA backlog age, and cost per accepted unit. Include an outage, a staffing shortage, and a QA bottleneck; show cases where reassignment cannot resolve the problem. A successful demonstration explains the constraint, permits only valid actions, preserves an audit trail, and produces reproducible metrics. An intervention is not assumed to improve every metric.
 
+
+## Implemented demonstration and simulated evidence
+
+The first release is a functional browser application with 60 fictional workers, three client projects, six operational workspaces, assignment rules, capacity forecasts, an audit trail and CSV reporting. It uses deterministic snapshots and scenario calculations; the originally proposed 90-day event model is not implemented.
+
+In the checked retail scenario, a qualified collector alone leaves projected delivery at 320 against 340 committed units because QA remains the constraint. Adding one QA block after that assignment raises projected accepted delivery to 341. Across the portfolio, projected output rises from 1,062 to 1,083 units and modeled remaining-window direct cost rises by $168. These are reproducible simulated outcomes, not actual client improvements. See VALIDATION.md for scope and assumptions.
+
