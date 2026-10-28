@@ -19,10 +19,15 @@ JavaScript syntax checked with `node --check dist/app.mjs`.
 - Searching “Lucia” returns three workers across the fictional directory.
 - Incident resolution changes the open count without changing capacity or historical metrics.
 - Downloaded CSV was parsed and verified for simulation labeling, all three project rows, matching baseline projections and recorded incident action.
-- Overview, QA and scenario screenshots were captured from the running app and are embedded in the README.
+- Overview, workforce, investigation, QA, scenario and report screenshots were captured from the running app and are embedded in the README.
 
 Desktop browser interactions were checked. Responsive CSS includes all six navigation actions on small screens; a separate mobile-device browser test was not performed. Native print/PDF appearance is provided by print CSS but an actual PDF export was not inspected.
 
 ## Interpretation
 
 The 21-unit projected improvement is a controlled deterministic example, not an achieved client result. Added staffing and QA costs are counted once. These modeled costs exclude existing QA labor and overhead. Benefit, profit and payback require additional commercial assumptions.
+
+
+## Final portfolio package
+
+The final screenshot set includes six application screens. The scenario screenshot shows the checked Lucia Martin plus QA intervention, including projected output of 1,083 and direct cost of $4,072. The eight-slide presentation explains the same scenario and limitations. See PROJECT-CLOSEOUT.md for the completed scope.

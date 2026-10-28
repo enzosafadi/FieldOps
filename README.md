@@ -2,13 +2,15 @@
 
 ### Staffing & Operations Management
 
+**Status: completed portfolio prototype, version 1.0.**
+
 An interactive staffing and operations app for teams working across different locations. Assign available workers to projects, monitor quality checks, identify delivery risks, and compare the cost of corrective actions.
 
 The example business collects recordings used to train AI. That is the client industry: FieldOps itself uses predefined rules and calculations, with managers making staffing decisions.
 
 **All data and outcomes are simulated.** This is an independent portfolio project, not actual client work.
 
-[Open hosted app](https://fieldops-ai.genialmoose17.chatgpt.site) · [Business case](docs/BUSINESS-CASE.md) · [Introduction](docs/INTRODUCTION.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md)
+[Open hosted app](https://fieldops-ai.genialmoose17.chatgpt.site) · [Business case](docs/BUSINESS-CASE.md) · [Introduction](docs/INTRODUCTION.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md) · [Presentation PDF](docs/presentation/FieldOps-Project-Presentation.pdf) · [PowerPoint](docs/presentation/FieldOps-Project-Presentation.pptx)
 
 The hosted app is owner-private and requires the owner's ChatGPT access. The reviewed demo source in this repository can also be run locally.
 
@@ -19,12 +21,18 @@ The hosted app is owner-private and requires the owner's ChatGPT access. The rev
 ## Try a real operational decision
 
 1. Open **Retail interactions → Investigate**. Baseline forecast is 320 accepted units against a 340-unit commitment.
-2. Assign a qualified reserve agent. Collection capacity increases; the QA-constrained forecast stays at 320.
+2. Assign Lucia Martin (FO-049), a qualified reserve worker. Collection capacity increases; the QA-constrained forecast stays at 320.
 3. Add a QA reserve block. Forecast reaches 341 accepted units; recorded direct cost rises by $168 for the illustrated collector and QA intervention.
 4. Open **Scenarios** to inspect baseline comparison and the decision audit. Apply connectivity stress to see a different constraint emerge.
 5. Open **Reports** to export the current scenario as CSV, or print it to PDF. Reset the demo from Scenarios when finished.
 
 These are deterministic simulation results, not realized savings or measured client outcomes.
+
+## Staffing and investigation
+
+![Worker directory with locations, qualifications, current assignments and availability](docs/screenshots/Workforce.jpg)
+
+![Delivery investigation showing the QA constraint and qualified reserve candidates](docs/screenshots/Investigation.jpg)
 
 ## Scenario planning
 
@@ -33,6 +41,18 @@ These are deterministic simulation results, not realized savings or measured cli
 ## Quality assurance
 
 ![Quality workspace with first-pass acceptance, review queues and reserve capacity](docs/screenshots/Quality.jpg)
+
+## Client reporting
+
+![Client delivery report after the illustrated staffing and QA interventions](docs/screenshots/Reports.jpg)
+
+## Project presentation
+
+[![FieldOps project presentation cover](docs/presentation/Cover.png)](docs/presentation/FieldOps-Project-Presentation.pdf)
+
+[Read the presentation](docs/presentation/FieldOps-Project-Presentation.pdf) or [download the editable PowerPoint](docs/presentation/FieldOps-Project-Presentation.pptx).
+
+[Five-minute walkthrough](docs/DEMO-WALKTHROUGH.md) · [Project closeout and scope](docs/PROJECT-CLOSEOUT.md)
 
 ## What works
 
