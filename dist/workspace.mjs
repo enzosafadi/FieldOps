@@ -1,3 +1,4 @@
+import {APP_VERSION} from './release.mjs';
 import {validateWorkflow} from './workflow.mjs';
 import {initialState, projects} from './model.mjs';
 
@@ -57,7 +58,7 @@ export function validateState(input) {
 }
 
 export function createBackup(state, now = new Date()) {
-  return JSON.stringify({format:'fieldops-workspace',schemaVersion:1,exportedAt:now.toISOString(),state:validateState(state)},null,2);
+  return JSON.stringify({format:'fieldops-workspace',schemaVersion:1,applicationVersion:APP_VERSION,exportedAt:now.toISOString(),state:validateState(state)},null,2);
 }
 
 export function parseBackup(text) {

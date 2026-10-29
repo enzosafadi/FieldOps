@@ -1,3 +1,19 @@
+# FieldOps v1.1.0
+
+Current release: **1.1.0 — October 29, 2026**. Browser-local simulated prototype; owner acceptance pending.
+
+Adds complete per-deliverable workflow histories, operator attribution, before/after operational records, validated backup/recovery and a light-gray/violet interface. Shared verified-user storage and protected retention remain future work.
+
+- [Changes in v1.1.0](CHANGELOG.md)
+- [ADLC — requirements, decisions, tests and release gates](docs/ADLC.md)
+- [Previous version v1.0.0 and exact source baselines](docs/releases/V1.0.0.md)
+- [Current release notes](docs/releases/V1.1.0.md)
+- [Workflow usage and limitations](docs/WORKFLOW-HISTORY.md)
+
+The earlier gallery and presentation below document **v1.0.0**, including its original white/green design. They are retained as historical evidence and do not depict the latest release.
+
+---
+
 # FieldOps
 
 ### Staffing & Operations Management
