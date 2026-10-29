@@ -1,79 +1,72 @@
-# FieldOps — Staffing & Operations Management
+# FieldOps — Technician Work & Operations
 
-**Current release: v1.1.0 · October 29, 2026**  
-Working browser prototype with simulated data. Owner acceptance is pending.
+**Current release: v1.2.0 · October 29, 2026**  
+Working browser prototype with simulated records; owner acceptance pending.
 
-FieldOps connects staffing, quality, delivery risks and the history of individually identified work. Managers can inspect a deliverable's owner, execution, submissions, review decisions and rework, then trace operational changes to the recorded operator and before/after values.
+FieldOps now puts a technician's repair day first: appointments, client-requested changes, documented work, emergencies, urgent replacements and the consequences for each client. Earlier staffing/quality/delivery workspaces remain available as a separate deterministic simulation.
 
-The example client business collects recordings used to train AI. FieldOps itself uses deterministic rules and calculations; it does not run an autonomous AI model.
+[Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.2.0 notes](docs/releases/V1.2.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
 
-[ADLC](docs/ADLC.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Changelog](CHANGELOG.md) · [v1.1.0 release](docs/releases/V1.1.0.md) · [v1.0.0 baseline](docs/releases/V1.0.0.md) · [Business case](docs/BUSINESS-CASE.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md)
+## Current screenshots — v1.2.0
 
-[Open hosted app](https://fieldops-ai.enzo-safadi.chatgpt.site/) — owner-private; requires the owner's ChatGPT access. The reviewed demonstration can also run locally.
+### SS1 — Technician home
 
-## Current screenshots — v1.1.0
+![Technician home with real repair imagery and unresolved-emergency attention](docs/screenshots/v1.2.0/SS1_FieldOps_v1_2_0_Technician_Home.jpg)
 
-Authentic browser captures of the reviewed v1.1.0 source. All people, clients, work, costs and results are simulated. SS1 and SS3 illustrate different explicitly described scenario states.
+Real repair-work photography supports visit cards and an attention link for a fictional unresolved emergency. The pictured person is stock imagery, not an assigned technician or endorsement.
 
-### SS1 — Operations overview
+### SS2 — Appointment history and client impact
 
-![SS1: v1.1.0 light-gray and violet operations overview](docs/screenshots/v1.1.0/SS1_FieldOps_v1_1_0_Overview.jpg)
+![Original and revised appointment with reason, recorder and client impact](docs/screenshots/v1.2.0/SS2_FieldOps_v1_2_0_Repair_Rescheduling.jpg)
 
-Baseline staffing and delivery overview: 45 active workers, 712 historically accepted units and one project at risk. These are fixture values, not customer results.
+The original booking remains alongside the client's revised appointment, reason, operator and confirmation. Client-specific replacement/downtime/cost consequences are visible below.
 
-### SS2 — Work-item workflow history
+### SS3 — Versioned technician work and ramifications
 
-![SS2: complete work history showing assignment, execution, submission and return for rework](docs/screenshots/v1.1.0/SS2_FieldOps_v1_1_0_Workflow_History.jpg)
+![Two retained issue versions showing work, impact and estimate and approval changes](docs/screenshots/v1.2.0/SS3_FieldOps_v1_2_0_Client_Issue_History.jpg)
 
-WORK-001 retains four steps: assignment, execution, submission with output reference, and review returning the work for rework. Operator, UTC time, notes and changed values remain visible. Operator names are self-declared demo identities.
+The second update retains the first: CAD185/Pending and CAD195/Approved-as-recorded remain in the same client's history. These are fictional estimates and reported approval statuses, not real invoices or verified authorizations.
 
-### SS3 — Scenario comparison
+[Exact capture states and reproduction](docs/SCREENSHOTS.md) · [Image sources and credits](docs/ASSET-CREDITS.md)
 
-![SS3: current scenario output, staffing and QA costs after real UI interventions](docs/screenshots/v1.1.0/SS3_FieldOps_v1_1_0_Scenario_Comparison.jpg)
+## What v1.2.0 adds
 
-This separate scenario assigns Lucia Martin to Home routines, adds one Retail QA block, and applies 35% Home connectivity stress. Current projected output is 1,061 versus the 1,062-unit baseline; modeled remaining-window direct cost is $4,072, up $168. The adverse scenario is shown honestly: an intervention does not guarantee a net improvement.
+- Technician-centered Home and Repairs: nine workspaces in total.
+- Nine rescheduling reasons with requester, recorder, notes, original/revised times and confirmation.
+- Twenty-five technician update types covering diagnosis, work performed, emergencies, urgent replacements, parts, temporary repairs, approval, return visits and closure.
+- Client-linked issue versions retaining findings, work, parts, next action, priority/status, service impact, downtime, proposed additional CAD cost and recorded notification/authorization.
+- Toronto appointment validation, technician overlap checks and explicit rejection of ambiguous/nonexistent DST times.
+- Complete service history in validated JSON backups; concise event summaries in workflow CSV.
+- Staffing reset retains repair and issue records. No automatic charges, purchases, messages or rescheduling from an issue report.
 
-[Capture details and reproduction steps](docs/SCREENSHOTS.md)
+## Try the service workflow
 
-## What works in v1.1.0
+1. Open Home → a repair visit.
+2. Reschedule explicitly using the revised time, reason and client confirmation.
+3. Scroll to Technician work & client impact; create an issue with findings, work and client ramifications.
+4. Append another update to that same issue; inspect the preserved earlier version.
+5. Return Home to inspect unresolved emergencies. Download a JSON workspace backup under Reports.
 
-- Seven workspaces: Workflows, Overview, Workforce, Quality, Incidents, Scenarios and Reports.
-- Individually identified deliverables with qualified owners and controlled execution, submission, review, rework and final-outcome transitions.
-- Structured operator/time/project/record history with notes and before/after snapshots; filters and workflow-history CSV export.
-- Eligibility-checked reserve staffing, bounded QA capacity, incident coordination and deterministic scenario comparison.
-- Validated JSON workspace backups, restore preview/confirmation, damaged-save preservation and explicit storage-failure messages.
-- Staffing-scenario reset retains work items and earlier decisions. Browser-data clearing and backup replacement have different consequences; export before replacing data.
+[Detailed usage and all update categories](docs/REPAIRS-AND-CLIENT-IMPACT.md)
 
-## Follow one deliverable
+## Preserved versions
 
-1. Open **Workflows**, set a demo operator name and select a work item.
-2. Record **In progress**, describing the work performed.
-3. Record **Submitted** with a note and output reference.
-4. Review it as **Accepted**, **Rework** or **Rejected**. Rework returns through execution and submission; previous steps remain.
-5. Inspect per-item history, filter the cross-record explorer, or export the workflow CSV.
-6. Open **Reports** to download a complete workspace backup before replacing a scenario.
+v1.0.0 and v1.1.0 are preserved under their release branches. Their screenshots and original presentation remain historical evidence and are not labeled as current media. See [release history](docs/releases) and [changelog](CHANGELOG.md).
 
-[Workflow guide and limits](docs/WORKFLOW-HISTORY.md)
-
-## ADLC and version control
-
-The ADLC connects business requirements, design decisions, implementation, tests, release documentation and owner review. [See its flowchart](docs/FLOWCHARTS.md#adlc--ai-development-lifecycle).
-
-The exact previous source is preserved in [releases/v1.0.0](https://github.com/enzosafadi/FieldOps/tree/releases/v1.0.0). Its [gallery](https://github.com/enzosafadi/FieldOps/tree/releases/v1.0.0/docs/screenshots) and original [presentation](https://github.com/enzosafadi/FieldOps/blob/releases/v1.0.0/docs/presentation/FieldOps-Project-Presentation.pdf) document the earlier white/green design. They are historical evidence, not current screenshots. The v1.1.0 feature baseline is preserved in [releases/v1.1.0](https://github.com/enzosafadi/FieldOps/tree/releases/v1.1.0); subsequent documentation/media updates on main do not change its application behavior.
+Earlier recording/staffing functionality remains available: 60 fictional workers, eligibility-checked reserve assignments, QA limits, incident coordination, deterministic forecasts and reports. Recording a repair or client-impact update does not rewrite those historical aggregate metrics.
 
 ## Run locally
-
-Python 3 serves the static files; Node.js runs validation. No API key or dependency installation is needed.
 
 ```bash
 python3 -m http.server 8080 --directory dist
 # Open http://localhost:8080
-node tests/model.test.mjs
-node --test tests/workspace.test.mjs tests/workflow.test.mjs
+node --test tests/*.test.mjs
 ```
+
+No API key or dependency install is required. [Architecture](docs/ARCHITECTURE.md) · [Business case](docs/BUSINESS-CASE.md)
 
 ## Scope and limits
 
-Browser-local simulated prototype. There are no verified team accounts, shared database, server-enforced permissions, tamper-proof retention or production integrations. Local data and imported backups can be edited. Work records illustrate lifecycle tracking independently of the fixed aggregate delivery snapshot. Output references do not upload or verify files. Forecasts use a four-hour deterministic model; existing QA labor and overhead are excluded from scenario costs. Mobile layout exists, but full mobile viewport verification remains pending.
+Browser-local simulated prototype with three repair orders and three service technicians. No arbitrary real customer/order creation or import, attachments, verified team identities, shared protected storage, real parts stock, billing/purchasing, live client messaging or production integrations. Operator names and recorded approvals are self-declared. Estimates are per issue and are not summed into invoices. Generic CSV exports concise issue summaries; complete findings/impact history is in the client journal and JSON backups. Full mobile viewport and real multiuser validation remain pending.
 
-Source and documentation distinguish implemented features, simulated outcomes and future work. No real client results, financial savings or production acceptance are claimed.
+All people, clients, work, estimates and outcomes are fictional. FieldOps uses deterministic rules; the earlier example industry's AI recordings do not imply the app runs an autonomous AI model.

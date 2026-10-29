@@ -2,6 +2,22 @@
 
 Product versions describe the FieldOps application. They are separate from Sites deployment version numbers, JSON backup format version 1, and internal workspace schema version 2.
 
+## 1.2.0 — October 29, 2026
+
+### Added
+
+- Technician Home with sourced/credited repair photographs, upcoming visits and unresolved-emergency attention links.
+- Repair rescheduling with nine reasons, requester/recorder, mandatory notes, original/revised Toronto appointments and client confirmation.
+- Three fictional repair orders, stable client links and modeled technician collision/DST checks.
+- Twenty-five technician work/issue update types, including emergency intervention, urgent replacement, diagnostics, parts, repair outcomes and follow-up.
+- Versioned client-linked work/findings/parts/next-action records and per-issue service impact, downtime, proposed CAD cost, recorded notification/authorization and follow-up.
+- Validated migration and backup of complete service records; staffing reset retains them.
+- Eight rescheduling and eight service-issue test cases; current screenshots, ADLC, release notes, guides, asset credits and flowchart.
+
+### Preserved and limited
+
+v1.1.0 and v1.0.0 baselines remain intact. Previous operational views remain available. Service records are a separate local field-service prototype; no verified shared users, arbitrary real order intake, attachments, billing, parts purchasing, client messaging or protected server retention is claimed. Recording an issue has no automatic financial or appointment effect.
+
 ## 1.1.0 — October 29, 2026
 
 Documentation/media follow-up: refreshed the public README with authentic SS1–SS3 captures, explicit reproduction states, ADLC and work-item flowcharts, and clear links to historical v1.0.0 evidence. Application behavior and product version remain unchanged.

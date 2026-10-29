@@ -20,7 +20,7 @@ export function validateWorkflow(input,workers){
   });
   let previousId=0;const latest=new Map();
   const workflowEvents=input.workflowEvents.map(e=>{
-    if(!e||!Number.isSafeInteger(e.id)||e.id<=previousId||!text(e.time,40)||!Number.isFinite(Date.parse(e.time))||!text(e.actor,80)||!['work','worker','quality','incident','scenario','workspace'].includes(e.entityType)||!text(e.entityId,80)||!['P01','P02','P03',null].includes(e.project)||!text(e.action,160)||!text(e.note,1000)||!['seed','user','migration'].includes(e.source)||!snapshot(e.before)||!snapshot(e.after))throw Error('Invalid workflow event.');
+    if(!e||!Number.isSafeInteger(e.id)||e.id<=previousId||!text(e.time,40)||!Number.isFinite(Date.parse(e.time))||!text(e.actor,80)||!['work','worker','quality','incident','scenario','workspace','repair','service_issue'].includes(e.entityType)||!text(e.entityId,80)||!['P01','P02','P03',null].includes(e.project)||!text(e.action,160)||!text(e.note,1000)||!['seed','user','migration'].includes(e.source)||!snapshot(e.before)||!snapshot(e.after))throw Error('Invalid workflow event.');
     const key=e.entityType+':'+e.entityId;
     if(latest.has(key)&&JSON.stringify(latest.get(key))!==JSON.stringify(e.before))throw Error('Workflow history contains a broken step sequence.');
     if(e.entityType==='work'&&!ids.has(e.entityId))throw Error('Workflow event refers to a missing work item.');
@@ -30,9 +30,9 @@ export function validateWorkflow(input,workers){
   for(const w of workItems)if(JSON.stringify(latest.get('work:'+w.id))!==JSON.stringify(w))throw Error('Work item does not match its workflow history.');
   return {operatorName:input.operatorName.trim(),workItems,workflowEvents};
 }
-function event(s,type,id,project,action,note,before,after){
+function event(s,type,id,project,action,note,before,after,now=new Date()){
   if(s.workflowEvents.length>=5000)throw Error('Workspace history is full. Export your workspace before beginning a new scenario.');
-  s.workflowEvents.push({id:(s.workflowEvents.at(-1)?.id||0)+1,time:new Date().toISOString(),actor:s.operatorName,entityType:type,entityId:id,project,action,note:note||'Manager action in the simulated workspace.',before,after,source:'user'});
+  s.workflowEvents.push({id:(s.workflowEvents.at(-1)?.id||0)+1,time:now.toISOString(),actor:s.operatorName,entityType:type,entityId:id,project,action,note:note||'Manager action in the simulated workspace.',before,after,source:'user'});
 }
 export function advanceWork(s,id,next,note,output){
   const w=s.workItems.find(w=>w.id===id);if(!w||!transitions[w.status].includes(next))throw Error('This workflow step is not allowed.');
@@ -57,3 +57,5 @@ export function trackOperationalChanges(s,before){
   for(const i of s.incidents){const old=before.incidents.find(b=>b.id===i.id);if(i.status!==old.status)event(s,'incident',i.id,i.project,'Incident status changed',i.title,{status:old.status,owner:old.owner},{status:i.status,owner:i.owner});}
   if(s.outage!==before.outage)event(s,'scenario','connectivity','P01','Connectivity stress changed','35% collection-capacity stress; this does not change historical accepted work.',{outage:before.outage},{outage:s.outage});
 }
+
+export {event as recordEvent};

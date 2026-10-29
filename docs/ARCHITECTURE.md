@@ -4,7 +4,7 @@
 
 | Layer | Implementation |
 | --- | --- |
-| UI | Buildless HTML, CSS and JavaScript ES modules, six workspaces |
+| UI | Buildless HTML, CSS and JavaScript ES modules, nine workspaces in v1.2.0 |
 | Data | Deterministic generator for 60 fictional workers; three project snapshots; three initial incidents; seven daily aggregate chart values |
 | Operations model | Pure calculations in `dist/model.mjs` for collection, QA, projected accepted delivery and direct cost |
 | Actions | Availability and qualification validation, one assignment per shared shift, reserve QA limits, incident transitions and audit history |
@@ -44,3 +44,10 @@ Each event includes a sequential identifier, UTC timestamp, self-declared operat
 `workspace.mjs` validates local state and JSON backups before use. Backups include structured workflow history. Validation rejects broken event sequences and a current work record that differs from its final historical snapshot. Invalid browser data is preserved for recovery and not silently overwritten. Restore requires explicit confirmation; download a current backup before replacing a scenario. CSV exports neutralize spreadsheet formula prefixes.
 
 Existing browser saves migrate to three clearly labeled simulated starting work records. Earlier plain-text activity is retained, but historical structured events are not invented. The operator name is editable demo attribution, not authentication. Browser state and imported backups can be edited: history is not a tamper-proof compliance audit. Shared persistence, verified identities, permissions, server timestamps and immutable retention are still required for real team use.
+
+
+## v1.2.0 — Field-service extension
+
+`repairs.mjs` validates Toronto appointment windows, records nine reschedule reasons, and replays appointment history against current orders. `service-issues.mjs` implements 25 update types and versioned work/client-impact records with stable repair/client links. `repair-ui.mjs` renders Home and Repairs; `service-issue-ui.mjs` renders the technician work/impact journal. Stock images are bundled under dist/assets with credits.
+
+The three fictional repair orders and three technicians are separate from the earlier 60-worker recording simulation. Its operational metrics remain fixed simulated aggregates. Validation migrates v1.1 saves, preserves repair/issue records across staffing reset, and includes them in JSON backup. Generic workflow CSV contains concise event summaries; complete findings/impact versions are in JSON and the client journal. Storage and identity remain browser-local/self-declared.

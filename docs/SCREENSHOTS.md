@@ -1,3 +1,23 @@
+# FieldOps v1.2.0 — Current Screenshot Evidence
+
+Captured October 29, 2026 from the current v1.2.0 browser preview. All client/work records are simulated. The gallery represents different points in the same demonstration, not real service work.
+
+| File | Actual evidence |
+| --- | --- |
+| SS1_FieldOps_v1_2_0_Technician_Home.jpg | Real credited technician imagery, repair-visit cards and an unresolved-emergency attention link after the first issue report |
+| SS2_FieldOps_v1_2_0_Repair_Rescheduling.jpg | Original October 30 appointment, revised November 2 client request, reason/recorder/confirmation and the client's latest replacement impact |
+| SS3_FieldOps_v1_2_0_Client_Issue_History.jpg | Two retained technician/impact versions: emergency intervention and urgent replacement requirement; CAD185 → CAD195 and Pending → Approved as recorded |
+
+## Reproduction
+
+For REP-001, reschedule October 30 09:00 to November 2 10:00 Toronto, requested by Client, reason Client unavailable, mandatory explanatory note, and recorded confirmation. Create a fictional Emergency intervention issue with work/findings/parts, Equipment unusable impact, 1,440-minute estimated downtime, CAD185 proposed cost and Pending approval. Home shows the unresolved emergency.
+
+Append an Urgent replacement required update for the same issue, Waiting for parts, describing the follow-up work and changing the proposed estimate to CAD195 with Approved-as-recorded status. Earlier work, estimate and approval remain visible. Reload and inspect both journals. No actual client contact, authorization, parts order or repair occurs.
+
+The photos are illustrative stock imagery; see ASSET-CREDITS.md. Screenshot files are under screenshots/v1.2.0/. Earlier v1.1.0 captures remain under screenshots/v1.1.0/ and their preserved release branch. v1.0.0 evidence remains preserved in its release branch.
+
+---
+
 # FieldOps v1.1.0 — Screenshot Evidence
 
 Captured October 29, 2026 from the current local preview of the deployed product source. The light-gray/violet interface is the v1.1.0 design. No ChatGPT interface or real client data appears in these images.

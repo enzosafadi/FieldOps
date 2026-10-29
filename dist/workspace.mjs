@@ -1,3 +1,5 @@
+import {validateServiceIssues} from './service-issues.mjs';
+import {validateRepairs} from './repairs.mjs';
 import {APP_VERSION} from './release.mjs';
 import {validateWorkflow} from './workflow.mjs';
 import {initialState, projects} from './model.mjs';
@@ -54,6 +56,8 @@ export function validateState(input) {
     return {time:new Date(entry.time).toISOString(), action:entry.action};
   });
   Object.assign(clean,validateWorkflow(input,clean.workers));
+  Object.assign(clean,validateRepairs(input));
+  Object.assign(clean,validateServiceIssues(input,clean.repairOrders));
   return clean;
 }
 
