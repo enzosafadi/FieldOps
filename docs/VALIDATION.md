@@ -31,3 +31,9 @@ The 21-unit projected improvement is a controlled deterministic example, not an 
 ## Final portfolio package
 
 The final screenshot set includes six application screens. The scenario screenshot shows the checked Lucia Martin plus QA intervention, including projected output of 1,083 and direct cost of $4,072. The eight-slide presentation explains the same scenario and limitations. See PROJECT-CLOSEOUT.md for the completed scope.
+
+## October 29 upgrade validation
+
+Passed original `node tests/model.test.mjs` operational checks and 13 Node test-runner cases in `tests/workspace.test.mjs` and `tests/workflow.test.mjs`. Coverage includes valid backup round trips, preservation of damaged local data, storage failures, incompatible and oversized files, invalid assignments, script-bearing fixture changes, CSV formulas, complete submission/rework/acceptance sequence, operator attribution, operational before/after events, work creation, broken sequence rejection, and legacy-save migration.
+
+Browser preview checks verified workspace JSON download, file selection, validation preview, confirmed restore, persistence after reload, reset cancellation, operator selection, execution, submission with an output reference, review return to rework, and preservation of all four work steps after reload. New workflow CSV uses the tested CSV serializer; a browser export check was interrupted by browser transport disconnection. Full mobile viewport verification and backend/multiuser validation were not performed. All demonstrated records are simulated.

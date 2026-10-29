@@ -34,3 +34,13 @@ The initial 90-day SQL/Python simulation was a planning direction. This release 
 ## Repository structure
 
 `dist/` contains the reviewed runnable demo; `tests/` contains model validation; `docs/` contains the business case, introduction, validation and screenshots. The hosting identity is maintained in the Site source, outside the public portfolio snapshot.
+
+## Workflow history upgrade — October 29, 2026
+
+The Workflows workspace adds individually identified deliverables, qualified owners, controlled stage transitions, required work/review notes, output references, and complete per-item timelines. `workflow.mjs` implements the lifecycle and structured change events; `workflow-ui.mjs` renders the record explorer. Stages: Assigned → In progress → Submitted → Accepted, Rework, or Rejected. Rework returns through In progress and Submitted; previous submissions and review reasons remain in history.
+
+Each event includes a sequential identifier, UTC timestamp, self-declared operator name, entity type/ID, project, action, note, and before/after snapshots. Worker assignments, QA allocations, incident status changes and connectivity interventions are also recorded. Staffing-scenario reset retains work items and historical decisions and records resulting operational changes. Workflow records illustrate individual lifecycle tracking; they do not retroactively change the aggregate simulated delivery snapshot.
+
+`workspace.mjs` validates local state and JSON backups before use. Backups include structured workflow history. Validation rejects broken event sequences and a current work record that differs from its final historical snapshot. Invalid browser data is preserved for recovery and not silently overwritten. Restore requires explicit confirmation; download a current backup before replacing a scenario. CSV exports neutralize spreadsheet formula prefixes.
+
+Existing browser saves migrate to three clearly labeled simulated starting work records. Earlier plain-text activity is retained, but historical structured events are not invented. The operator name is editable demo attribution, not authentication. Browser state and imported backups can be edited: history is not a tamper-proof compliance audit. Shared persistence, verified identities, permissions, server timestamps and immutable retention are still required for real team use.
