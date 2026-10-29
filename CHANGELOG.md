@@ -4,6 +4,8 @@ Product versions describe the FieldOps application. They are separate from Sites
 
 ## 1.1.0 — October 29, 2026
 
+Documentation/media follow-up: refreshed the public README with authentic SS1–SS3 captures, explicit reproduction states, ADLC and work-item flowcharts, and clear links to historical v1.0.0 evidence. Application behavior and product version remain unchanged.
+
 ### Added
 
 - Workflows workspace with individually identified deliverables, project/worker ownership, controlled stage transitions and terminal acceptance/rejection.

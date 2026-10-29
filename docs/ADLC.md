@@ -54,3 +54,23 @@ Browser preview: JSON download, file chooser, restore preview/confirmation, rest
 Source is maintained in the existing GitHub repositories; preserve public/private visibility and the hosted app's owner-private audience. Source must be pushed before deploying its matching archive. Release evidence consists of the versioned source commit, preserved v1.0.0 baseline, current notes, actual validation and the matching deployment result.
 
 The owner must review the workflow behavior and visual design. This is an implemented prototype upgrade, not commercial acceptance. The next engineering gate is shared verified-user persistence and protected workflow retention, followed by business-data reconciliation and a customer-specific pilot. Other applications remain outside this release.
+
+
+## 8. Lifecycle flowchart and public evidence
+
+```mermaid
+flowchart TD
+    A["Business problem"] --> B["Requirements and acceptance criteria"]
+    B --> C["Design and build"]
+    C --> D["Test and inspect"]
+    D --> E{"Meets the requirements?"}
+    E -->|No| C
+    E -->|Yes| F["Document changes and release version"]
+    F --> G["Owner review"]
+    G --> H{"Accepted?"}
+    H -->|Changes needed| B
+    H -->|Yes| I["Operate and monitor"]
+    I --> B
+```
+
+Documentation/media update, October 29, 2026: the public README now leads with three authentic v1.1.0 captures (SS1–SS3) and links the earlier gallery through the preserved v1.0.0 branch. The workflow capture shows four retained steps and a rework reason. The scenario capture includes its adverse modeled output and increased cost; no favorable result is invented. Capture states and reproduction instructions are in [SCREENSHOTS.md](SCREENSHOTS.md). [FLOWCHARTS.md](FLOWCHARTS.md) also documents the work-item lifecycle. This update changes public evidence/documentation, not application behavior or owner-acceptance status.

@@ -1,98 +1,79 @@
-# FieldOps v1.1.0
+# FieldOps — Staffing & Operations Management
 
-Current release: **1.1.0 — October 29, 2026**. Browser-local simulated prototype; owner acceptance pending.
+**Current release: v1.1.0 · October 29, 2026**  
+Working browser prototype with simulated data. Owner acceptance is pending.
 
-Adds complete per-deliverable workflow histories, operator attribution, before/after operational records, validated backup/recovery and a light-gray/violet interface. Shared verified-user storage and protected retention remain future work.
+FieldOps connects staffing, quality, delivery risks and the history of individually identified work. Managers can inspect a deliverable's owner, execution, submissions, review decisions and rework, then trace operational changes to the recorded operator and before/after values.
 
-- [Changes in v1.1.0](CHANGELOG.md)
-- [ADLC — requirements, decisions, tests and release gates](docs/ADLC.md)
-- [Previous version v1.0.0 and exact source baselines](docs/releases/V1.0.0.md)
-- [Current release notes](docs/releases/V1.1.0.md)
-- [Workflow usage and limitations](docs/WORKFLOW-HISTORY.md)
+The example client business collects recordings used to train AI. FieldOps itself uses deterministic rules and calculations; it does not run an autonomous AI model.
 
-The earlier gallery and presentation below document **v1.0.0**, including its original white/green design. They are retained as historical evidence and do not depict the latest release.
+[ADLC](docs/ADLC.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Changelog](CHANGELOG.md) · [v1.1.0 release](docs/releases/V1.1.0.md) · [v1.0.0 baseline](docs/releases/V1.0.0.md) · [Business case](docs/BUSINESS-CASE.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md)
 
----
+[Open hosted app](https://fieldops-ai.enzo-safadi.chatgpt.site/) — owner-private; requires the owner's ChatGPT access. The reviewed demonstration can also run locally.
 
-# FieldOps
+## Current screenshots — v1.1.0
 
-### Staffing & Operations Management
+Authentic browser captures of the reviewed v1.1.0 source. All people, clients, work, costs and results are simulated. SS1 and SS3 illustrate different explicitly described scenario states.
 
-**Status: completed portfolio prototype, version 1.0.**
+### SS1 — Operations overview
 
-An interactive staffing and operations app for teams working across different locations. Assign available workers to projects, monitor quality checks, identify delivery risks, and compare the cost of corrective actions.
+![SS1: v1.1.0 light-gray and violet operations overview](docs/screenshots/v1.1.0/SS1_FieldOps_v1_1_0_Overview.jpg)
 
-The example business collects recordings used to train AI. That is the client industry: FieldOps itself uses predefined rules and calculations, with managers making staffing decisions.
+Baseline staffing and delivery overview: 45 active workers, 712 historically accepted units and one project at risk. These are fixture values, not customer results.
 
-**All data and outcomes are simulated.** This is an independent portfolio project, not actual client work.
+### SS2 — Work-item workflow history
 
-[Open hosted app](https://fieldops-ai.genialmoose17.chatgpt.site) · [Business case](docs/BUSINESS-CASE.md) · [Introduction](docs/INTRODUCTION.md) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md) · [Presentation PDF](docs/presentation/FieldOps-Project-Presentation.pdf) · [PowerPoint](docs/presentation/FieldOps-Project-Presentation.pptx)
+![SS2: complete work history showing assignment, execution, submission and return for rework](docs/screenshots/v1.1.0/SS2_FieldOps_v1_1_0_Workflow_History.jpg)
 
-The hosted app is owner-private and requires the owner's ChatGPT access. The reviewed demo source in this repository can also be run locally.
+WORK-001 retains four steps: assignment, execution, submission with output reference, and review returning the work for rework. Operator, UTC time, notes and changed values remain visible. Operator names are self-declared demo identities.
 
-## Operations overview
+### SS3 — Scenario comparison
 
-![FieldOps operations dashboard with staffing, accepted delivery, QA and risk indicators](docs/screenshots/Overview.jpg)
+![SS3: current scenario output, staffing and QA costs after real UI interventions](docs/screenshots/v1.1.0/SS3_FieldOps_v1_1_0_Scenario_Comparison.jpg)
 
-## Try a real operational decision
+This separate scenario assigns Lucia Martin to Home routines, adds one Retail QA block, and applies 35% Home connectivity stress. Current projected output is 1,061 versus the 1,062-unit baseline; modeled remaining-window direct cost is $4,072, up $168. The adverse scenario is shown honestly: an intervention does not guarantee a net improvement.
 
-1. Open **Retail interactions → Investigate**. Baseline forecast is 320 accepted units against a 340-unit commitment.
-2. Assign Lucia Martin (FO-049), a qualified reserve worker. Collection capacity increases; the QA-constrained forecast stays at 320.
-3. Add a QA reserve block. Forecast reaches 341 accepted units; recorded direct cost rises by $168 for the illustrated collector and QA intervention.
-4. Open **Scenarios** to inspect baseline comparison and the decision audit. Apply connectivity stress to see a different constraint emerge.
-5. Open **Reports** to export the current scenario as CSV, or print it to PDF. Reset the demo from Scenarios when finished.
+[Capture details and reproduction steps](docs/SCREENSHOTS.md)
 
-These are deterministic simulation results, not realized savings or measured client outcomes.
+## What works in v1.1.0
 
-## Staffing and investigation
+- Seven workspaces: Workflows, Overview, Workforce, Quality, Incidents, Scenarios and Reports.
+- Individually identified deliverables with qualified owners and controlled execution, submission, review, rework and final-outcome transitions.
+- Structured operator/time/project/record history with notes and before/after snapshots; filters and workflow-history CSV export.
+- Eligibility-checked reserve staffing, bounded QA capacity, incident coordination and deterministic scenario comparison.
+- Validated JSON workspace backups, restore preview/confirmation, damaged-save preservation and explicit storage-failure messages.
+- Staffing-scenario reset retains work items and earlier decisions. Browser-data clearing and backup replacement have different consequences; export before replacing data.
 
-![Worker directory with locations, qualifications, current assignments and availability](docs/screenshots/Workforce.jpg)
+## Follow one deliverable
 
-![Delivery investigation showing the QA constraint and qualified reserve candidates](docs/screenshots/Investigation.jpg)
+1. Open **Workflows**, set a demo operator name and select a work item.
+2. Record **In progress**, describing the work performed.
+3. Record **Submitted** with a note and output reference.
+4. Review it as **Accepted**, **Rework** or **Rejected**. Rework returns through execution and submission; previous steps remain.
+5. Inspect per-item history, filter the cross-record explorer, or export the workflow CSV.
+6. Open **Reports** to download a complete workspace backup before replacing a scenario.
 
-## Scenario planning
+[Workflow guide and limits](docs/WORKFLOW-HISTORY.md)
 
-![Baseline versus intervention comparison, costs and audit trail](docs/screenshots/Scenarios.jpg)
+## ADLC and version control
 
-## Quality assurance
+The ADLC connects business requirements, design decisions, implementation, tests, release documentation and owner review. [See its flowchart](docs/FLOWCHARTS.md#adlc--ai-development-lifecycle).
 
-![Quality workspace with first-pass acceptance, review queues and reserve capacity](docs/screenshots/Quality.jpg)
-
-## Client reporting
-
-![Client delivery report after the illustrated staffing and QA interventions](docs/screenshots/Reports.jpg)
-
-## Project presentation
-
-[![FieldOps project presentation cover](docs/presentation/Cover.png)](docs/presentation/FieldOps-Project-Presentation.pdf)
-
-[Read the presentation](docs/presentation/FieldOps-Project-Presentation.pdf) or [download the editable PowerPoint](docs/presentation/FieldOps-Project-Presentation.pptx).
-
-[Five-minute walkthrough](docs/DEMO-WALKTHROUGH.md) · [Project closeout and scope](docs/PROJECT-CLOSEOUT.md)
-
-## What works
-
-- Six workspaces: overview, searchable workforce, QA, incidents, scenario planning, and client reports.
-- 60 fictional workers across three locations and three projects.
-- Assignment validation for availability, qualifications, and overlapping assignment within one shared shift window.
-- Capacity-constrained delivery forecasts, added QA cost, connectivity stress, and immutable historical acceptance metrics.
-- Incident status transitions, browser-local persistence, reset, and action audit trail.
-- CSV export, print styling, keyboard-accessible investigation drawer, and responsive navigation.
+The exact previous source is preserved in [releases/v1.0.0](https://github.com/enzosafadi/FieldOps/tree/releases/v1.0.0). Its [gallery](https://github.com/enzosafadi/FieldOps/tree/releases/v1.0.0/docs/screenshots) and original [presentation](https://github.com/enzosafadi/FieldOps/blob/releases/v1.0.0/docs/presentation/FieldOps-Project-Presentation.pdf) document the earlier white/green design. They are historical evidence, not current screenshots. The v1.1.0 feature baseline is preserved in [releases/v1.1.0](https://github.com/enzosafadi/FieldOps/tree/releases/v1.1.0); subsequent documentation/media updates on main do not change its application behavior.
 
 ## Run locally
 
-Requires Python 3 for a static server, and Node.js for model checks. No package install or API key is required.
+Python 3 serves the static files; Node.js runs validation. No API key or dependency installation is needed.
 
 ```bash
 python3 -m http.server 8080 --directory dist
 # Open http://localhost:8080
 node tests/model.test.mjs
+node --test tests/workspace.test.mjs tests/workflow.test.mjs
 ```
-
-Source: `dist/index.html`, `dist/style.css`, `dist/app.mjs`, `dist/model.mjs`. Serve over HTTP rather than opening index.html directly because the app uses ES modules.
 
 ## Scope and limits
 
-This is a browser-based operational prototype with deterministic simulation and local storage. It has no shared database, real video collection, connected workforce system, or validated predictive model. Each scenario uses the same four-hour window. Historical data is a fictional snapshot with seven daily aggregates, not a generated 90-day event stream. Existing QA labor and overhead are excluded from the remaining-window direct-cost comparison, so that number is not profit or total operating cost.
+Browser-local simulated prototype. There are no verified team accounts, shared database, server-enforced permissions, tamper-proof retention or production integrations. Local data and imported backups can be edited. Work records illustrate lifecycle tracking independently of the fixed aggregate delivery snapshot. Output references do not upload or verify files. Forecasts use a four-hour deterministic model; existing QA labor and overhead are excluded from scenario costs. Mobile layout exists, but full mobile viewport verification remains pending.
 
-A separate private repository retains development materials. This public repository contains the reviewed reproducible demo, business case, introduction, validation notes and screenshots.
+Source and documentation distinguish implemented features, simulated outcomes and future work. No real client results, financial savings or production acceptance are claimed.
