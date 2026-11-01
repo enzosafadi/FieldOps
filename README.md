@@ -5,7 +5,7 @@ Working browser prototype with simulated records; owner acceptance pending.
 
 FieldOps now puts a technician's repair day first: appointments, client-requested changes, documented work, emergencies, urgent replacements and the consequences for each client. Earlier staffing/quality/delivery workspaces remain available as a separate deterministic simulation.
 
-[Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.2.0 notes](docs/releases/V1.2.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
+[Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.3.0 notes](docs/releases/V1.3.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
 
 ## Prior release screenshots — v1.2.0
 
@@ -75,3 +75,7 @@ Browser-local simulated prototype with three repair orders and three service tec
 
 All people, clients, work, estimates and outcomes are fictional. FieldOps uses deterministic rules; the earlier example industry's AI recordings do not imply the app runs an autonomous AI model.
 
+
+## Data readiness and planned grounding
+
+[Five data-quality checks and implementation gaps](docs/DATA-READINESS.md): accuracy, relevance, timeliness, cleanliness and availability. Existing structural validation and technician review are implemented; generative report grounding, factual verification, freshness monitoring and shared permissions remain planned.

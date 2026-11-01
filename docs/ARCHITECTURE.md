@@ -57,3 +57,7 @@ The three fictional repair orders and three technicians are separate from the ea
 ## v1.3.0 — Voice input adapter
 
 `speech-reporting.mjs` renders and binds voice controls beside the technician issue form. The browser speech provider supplies final transcripts to a temporary preview. Explicit insertion appends text to the existing validated form; saving uses the unchanged recordServiceIssue path. Rendering disposes the old recognizer. No audio, speech credentials or new persisted schema are introduced.
+
+## Data readiness and future grounding
+
+[DATA-READINESS.md](DATA-READINESS.md) defines the five quality dimensions, job/client/equipment context boundaries, proposed data owners and future source metadata. Current speech-to-text is an input adapter, not a grounded report generator. Permission-aware retrieval, freshness checks and provenance require future implementation.

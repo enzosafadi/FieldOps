@@ -4,6 +4,8 @@ Product versions describe the FieldOps application. They are separate from Sites
 
 ## 1.3.0 — November 1, 2026
 
+Documentation follow-up: added five-dimension data readiness requirements and future grounding acceptance criteria, clarified implemented versus planned capabilities, and corrected current ADLC release metadata. Application behavior unchanged.
+
 - English (Canada) and French (Canada) voice dictation in Repairs → Technician work & client impact.
 - Editable transcript preview, explicit insertion into work/findings/parts/next action/client-impact fields, and unchanged technician approval/save workflow.
 - Browser speech recognition with permission, connection, unsupported-browser and length-limit handling; typing remains available.

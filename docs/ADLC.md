@@ -1,6 +1,6 @@
 # FieldOps — AI Development Lifecycle (ADLC)
 
-Current product release: **v1.2.0**. Updated October 29, 2026. Working browser prototype; owner acceptance pending.
+Current product release: **v1.3.0**. Updated November 1, 2026. Working browser prototype; owner acceptance pending.
 
 ## 1. Human requirements and business scope
 
@@ -10,7 +10,7 @@ The owner supplies requirements and acceptance. AI assistance inspected source, 
 
 ## 2. Version and evidence control
 
-Product versions are independent of Site deployment numbers, backup format version 1 and internal workspace schema version 2. VERSION and the UI now identify v1.2.0. The exact previous application baselines remain in releases/v1.0.0 and releases/v1.1.0. Earlier galleries and presentations retain their historical identities. Current SS1–SS3 are in screenshots/v1.2.0; reproduction details distinguish the simulated states shown.
+Product versions are independent of Site deployment numbers, backup format version 1 and internal workspace schema version 2. VERSION and the UI now identify v1.3.0. The exact previous application baselines remain in releases/v1.0.0 and releases/v1.1.0. Earlier galleries and presentations retain their historical identities. Historical v1.2.0 SS1–SS3 are in screenshots/v1.2.0; reproduction details distinguish the simulated states shown.
 
 No old screenshot is overwritten or relabeled as new evidence. CHANGELOG.md and releases/V1.2.0.md record additions and limitations. GitHub source is pushed before deploying the matching archive; preserve owner-private hosting.
 
@@ -66,3 +66,7 @@ Before a real customer pilot: implement verified roles and client isolation in s
 ## v1.3.0 — Speech-to-text change record
 
 Requirement: reduce technician typing through optional English/French dictation. Design: isolated speech adapter, editable preview and explicit insert/save. Implementation: browser recognition with no audio storage or credentials. Verification: 36 automated tests pass (including six speech controller cases); browser integration was blocked by an unavailable browser binary and failed download, and real-device microphone acceptance remains pending. Release: v1.3.0, retaining earlier release documentation and existing issue schema. Review privacy and provider suitability before real client use.
+
+## Data readiness requirement — November 1, 2026
+
+Apply accuracy, relevance, timeliness, cleanliness and availability checks to technician reporting and future grounding. [Requirement and gap matrix](DATA-READINESS.md) records ownership, stable job/client associations, source freshness, review and measurable acceptance. Existing cross-client/history/schema controls are distinct from planned retrieval, source provenance, stale-data detection and verified permissions. This documentation update adds no generative AI runtime functionality. v1.3.0 has 36 passing automated entries; earlier validation sections retain their release-specific evidence.

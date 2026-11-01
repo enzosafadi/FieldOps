@@ -50,3 +50,7 @@ Browser preview verified a client-requested appointment change, retained origina
 ## v1.3.0 — Speech reporting validation
 
 Run `node --test tests/*.test.mjs`. Added speech controller cases cover reviewed insertion, duplicate events, length rejection, permission recovery, cleanup, unsupported browsers and multiple sessions. Real microphone transcription and language quality require manual acceptance; automated recognition events do not establish acoustic accuracy.
+
+## Data-readiness requirements review — November 1, 2026
+
+[DATA-READINESS.md](DATA-READINESS.md) maps existing validation to five data-quality dimensions and defines future acceptance cases. Documentation was checked against service-issues.mjs and existing tests; no new runtime behavior or new test execution is claimed by this documentation change. Current v1.3.0 suite previously passed 36 entries. Factual accuracy, source freshness and authorized model retrieval remain unverified/unimplemented.
