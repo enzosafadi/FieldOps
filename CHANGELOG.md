@@ -4,6 +4,8 @@ Product versions describe the FieldOps application. They are separate from Sites
 
 ## 1.3.0 — November 1, 2026
 
+Strategy documentation: consolidated reporting requirements, success measures, cloud/data/access foundations and the development-to-retirement operating lifecycle in docs/AI-STRATEGY-AND-OPERATING-MODEL.md. Linked from README and ADLC. Documentation only; no deployment or product-version change.
+
 Documentation follow-up: added five-dimension data readiness requirements and future grounding acceptance criteria, clarified implemented versus planned capabilities, and corrected current ADLC release metadata. Application behavior unchanged.
 
 - English (Canada) and French (Canada) voice dictation in Repairs → Technician work & client impact.

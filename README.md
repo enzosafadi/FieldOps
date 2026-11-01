@@ -5,7 +5,7 @@ Working browser prototype with simulated records; owner acceptance pending.
 
 FieldOps now puts a technician's repair day first: appointments, client-requested changes, documented work, emergencies, urgent replacements and the consequences for each client. Earlier staffing/quality/delivery workspaces remain available as a separate deterministic simulation.
 
-[Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.3.0 notes](docs/releases/V1.3.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
+[Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [AI strategy & operating model](docs/AI-STRATEGY-AND-OPERATING-MODEL.md) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.3.0 notes](docs/releases/V1.3.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
 
 ## Prior release screenshots — v1.2.0
 

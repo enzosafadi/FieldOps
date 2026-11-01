@@ -70,3 +70,7 @@ Requirement: reduce technician typing through optional English/French dictation.
 ## Data readiness requirement — November 1, 2026
 
 Apply accuracy, relevance, timeliness, cleanliness and availability checks to technician reporting and future grounding. [Requirement and gap matrix](DATA-READINESS.md) records ownership, stable job/client associations, source freshness, review and measurable acceptance. Existing cross-client/history/schema controls are distinct from planned retrieval, source provenance, stale-data detection and verified permissions. This documentation update adds no generative AI runtime functionality. v1.3.0 has 36 passing automated entries; earlier validation sections retain their release-specific evidence.
+
+## Consolidated AI strategy and operating model — November 1, 2026
+
+[AI-STRATEGY-AND-OPERATING-MODEL.md](AI-STRATEGY-AND-OPERATING-MODEL.md) consolidates previously stated reporting goals and data requirements with cloud setup, access boundaries, development, testing, monitoring, cost controls and retirement. It records current implementation versus proposed capabilities, pilot KPIs, ownership and decision gates. Targets, provider selection and production ownership remain to be established; no additional runtime behavior or test execution is claimed.
