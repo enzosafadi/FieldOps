@@ -7,31 +7,37 @@ FieldOps now puts a technician's repair day first: appointments, client-requeste
 
 [Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [AI strategy & operating model](docs/AI-STRATEGY-AND-OPERATING-MODEL.md) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.3.0 notes](docs/releases/V1.3.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
 
-## Prior release screenshots — v1.2.0
+## Current product and commercial status
+
+[Product brief and pilot-readiness matrix](docs/PRODUCT-READINESS.md) · [Introduction / who benefits](docs/INTRODUCTION.md) · [Current business case](docs/BUSINESS-CASE.md) · [Delivery and acceptance status](docs/PROJECT-CLOSEOUT.md)
+
+The next commercial step is a focused pilot after discovery and production-foundation work. This browser-local prototype is not yet a turnkey team system. No customer adoption, reporting-time savings or sales interest is claimed.
+
+## Current release screenshots — v1.3.0
 
 ### SS1 — Technician home
 
-![Technician home with real repair imagery and unresolved-emergency attention](docs/screenshots/v1.2.0/SS1_FieldOps_v1_2_0_Technician_Home.jpg)
+![v1.3.0 technician home with repair visits and credited stock photography](docs/screenshots/v1.3.0/SS1_FieldOps_v1_3_0_Technician_Home.jpg)
 
-Real repair-work photography supports visit cards and an attention link for a fictional unresolved emergency. The pictured person is stock imagery, not an assigned technician or endorsement.
+### SS2 — Original and revised appointment
 
-### SS2 — Appointment history and client impact
+![v1.3.0 retained original appointment and the November 3 revision with reason and operator](docs/screenshots/v1.3.0/SS2_FieldOps_v1_3_0_Appointment_History.jpg)
 
-![Original and revised appointment with reason, recorder and client impact](docs/screenshots/v1.2.0/SS2_FieldOps_v1_2_0_Repair_Rescheduling.jpg)
+### SS3 — Reviewed report preview
 
-The original booking remains alongside the client's revised appointment, reason, operator and confirmation. Client-specific replacement/downtime/cost consequences are visible below.
+![v1.3.0 manually entered fictional preview and explicit report insertion controls](docs/screenshots/v1.3.0/SS3_FieldOps_v1_3_0_Reviewed_Report_Preview.jpg)
 
-### SS3 — Versioned technician work and ramifications
+The preview text was typed for the screenshot. Dictation is blocked on the HTTP preview's security context. This image demonstrates the controls and typing fallback, not successful microphone transcription.
 
-![Two retained issue versions showing work, impact and estimate and approval changes](docs/screenshots/v1.2.0/SS3_FieldOps_v1_2_0_Client_Issue_History.jpg)
+### SS4 — Client-linked work record
 
-The second update retains the first: CAD185/Pending and CAD195/Approved-as-recorded remain in the same client's history. These are fictional estimates and reported approval statuses, not real invoices or verified authorizations.
+![v1.3.0 saved technician work and CAD185 proposed estimate linked to CLIENT-01](docs/screenshots/v1.3.0/SS4_FieldOps_v1_3_0_Client_Work_History.jpg)
 
-[Exact capture states and reproduction](docs/SCREENSHOTS.md) · [Image sources and credits](docs/ASSET-CREDITS.md)
+All records are fictional. The capture states and limits are in [screenshot evidence](docs/SCREENSHOTS.md). The pictured repair worker is credited stock imagery, not an assigned technician or endorsement.
 
 ## What v1.3.0 adds
 
-Voice-assisted technician reporting in English and French. Dictate into an editable preview, select a report field, insert reviewed text, then save the technician update. Browser support and microphone permission are required; typing stays available. [Voice reporting guide](docs/VOICE-REPORTING.md) · [v1.3.0 notes](docs/releases/V1.3.0.md). Existing screenshots and presentation describe v1.2.0.
+Voice-assisted technician reporting in English and French. Dictate into an editable preview, select a report field, insert reviewed text, then save the technician update. Browser support and microphone permission are required; typing stays available. [Voice reporting guide](docs/VOICE-REPORTING.md) · [v1.3.0 notes](docs/releases/V1.3.0.md). The current SS1–SS4 gallery is v1.3.0. Archived galleries describe earlier releases. The eight-slide presentation is historical v1.0.0 evidence.
 
 ## What v1.2.0 adds
 
@@ -79,3 +85,4 @@ All people, clients, work, estimates and outcomes are fictional. FieldOps uses d
 ## Data readiness and planned grounding
 
 [Five data-quality checks and implementation gaps](docs/DATA-READINESS.md): accuracy, relevance, timeliness, cleanliness and availability. Existing structural validation and technician review are implemented; generative report grounding, factual verification, freshness monitoring and shared permissions remain planned.
+

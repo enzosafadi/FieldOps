@@ -1,27 +1,19 @@
-# FieldOps 1.0 — Portfolio Project Closeout
+# FieldOps — Current Delivery and Acceptance Status
 
-Completed October 28, 2026, within the scope of an interactive portfolio prototype.
+Current baseline: v1.3.0. Reviewed November 1, 2026.
 
-## Delivered
+## Current delivery
 
-- Working staffing and operations app with six workspaces.
-- Deterministic simulation of 60 fictional workers and three client projects.
-- Qualified reserve assignment, QA capacity controls, connectivity stress, incident transitions, scenario comparisons, audit history and CSV reporting.
-- Public FieldOps repository and private FieldOps-Private repository.
-- Business case, project introduction, architecture and validation notes.
-- Six screenshots covering the overview, workforce, investigation, QA, scenario comparison and client report.
-- Eight-slide project presentation in editable PowerPoint and PDF formats.
+The repositories contain the technician-centered service prototype, retained work/client-impact history, rescheduling, English/French dictation controls, recovery, tests, version notes and documentation. The current SS1–SS4 gallery captures exact v1.3.0 source. Earlier v1.0, v1.1 and v1.2 media remain historical evidence.
 
-## Demonstrated business decision
+## Evidence and acceptance
 
-The retail project forecasts 320 accepted recordings against a 340-unit commitment. Assigning Lucia Martin adds $96 in collection labor but leaves QA capacity as the binding constraint. Adding one QA block costs another $72 and raises the forecast to 341. Portfolio projected output rises from 1,062 to 1,083 and at-risk projects fall from one to zero. These are simulated forecasts, not actual client results.
+The November 1 audit reran all six test files: 36 entries passed. Browser checks confirmed the current Home, original/revised booking, manually entered preview review/insertion and explicit client-linked issue save. No real microphone or production customer trial occurred. Automated tests cover successive issue-version preservation; the audit did not save a second follow-up version in the browser.
 
-## Final verification
+Owner acceptance, live microphone quality, full mobile-device behavior and real multiuser operation remain pending. v1.3.0 is a working simulated prototype, not an accepted production product.
 
-The automated model checks pass. Desktop browser verification confirms the staffing intervention, QA intervention and matching cost/output comparison. The screenshot set shows actual running application screens. Earlier workflow checks covered workforce search, incident transitions, reset and CSV contents. The presentation contains editable text and an editable results table.
+## Historical closeout
 
-## Defined limitations
+The original October 28 v1.0.0 closeout is preserved in releases/V1.0.0-CLOSEOUT.md. Its eight-slide presentation and original green interface describe the earlier recording/staffing simulation. They do not present v1.3.0 capabilities or repair-company outcomes.
 
-The app stores changes in the current browser. It has no shared backend, real personnel system or live video collection. Forecasts use deterministic rules and observed acceptance assumptions. The model covers one four-hour window, not general multi-shift scheduling. Existing QA labor and overhead are excluded from the cost comparison. Mobile device behavior and actual print/PDF export from the app have not been separately verified.
-
-The hosted app currently requires the owner's ChatGPT access. The public repository includes a runnable static demo and instructions for local use. Further integrations or production hardening would be a separate scope.
+[Current capabilities and pilot gate](PRODUCT-READINESS.md) · [Current introduction](INTRODUCTION.md) · [Business case](BUSINESS-CASE.md) · [ADLC](ADLC.md)

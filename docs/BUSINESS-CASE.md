@@ -1,46 +1,53 @@
 # FieldOps — Business Case
 
-Simulated portfolio project · Project definition stage
+Current scope: v1.3.0 technician-work and client-impact prototype. Reviewed November 1, 2026. All operational records and outcomes are simulated.
 
+## Business problem
 
-### Operational problem
+A repair appointment can move because the client is unavailable, access fails, parts are delayed or the previous job overruns. Technicians then record diagnosis, work, urgent replacements and proposed costs. A dispatcher and client need a consistent account of the original plan, the reason for each change, what work occurred and the next agreed action. Disconnected notes can require clarification and make follow-up harder.
 
-A distributed collection provider can have enough scheduled workers and still miss client delivery commitments. Absence, equipment problems, connectivity interruptions, quality failures, and limited review capacity each reduce accepted output. Separate staffing sheets, incident logs, and quality reports make it difficult to identify the true constraint and select an effective response.
+This is the problem hypothesis behind FieldOps. It does not prove that a particular repair company has these problems or that its existing software lacks these capabilities.
 
-### Users and decisions
+## Users and value hypotheses
 
-The operations manager needs to prioritize delivery risks and authorize capacity changes. Team leads need feasible assignments and clear incident ownership. QA leads need visibility into review and rework demand. Client stakeholders need an understandable report on accepted delivery, risks, and corrective actions.
-
-### Proposed intervention
-
-Connect workforce availability, technical readiness, collection output, QA decisions, delivery commitments, and direct labor costs. When a commitment is at risk, show the contributing constraint and feasible actions. Record the manager's chosen action and compare its simulated effect against a baseline under the same external conditions.
-
-### Alternatives and rationale
-
-| Option | Benefit | Limitation |
+| User | Supported decision | Value to test in a pilot |
 | --- | --- | --- |
-| Continue with spreadsheets and manual reports | Low initial setup effort | Reconciliation and constraint checks remain manual |
-| Build a reporting-only dashboard | Makes current performance easier to inspect | Does not demonstrate feasible assignments or their consequences |
-| Build the focused operations workflow | Connects risk detection, action, and measurable outcomes | Requires explicit rules, reliable event data, and more implementation work |
+| Technician | What should I record about this job and the client's consequences? | Less composition and correction time without losing required facts |
+| Dispatcher/service manager | Why did the appointment move and what needs follow-up? | Less reconstruction of visit history and fewer clarification handoffs |
+| Client-service team | What changed for this specific client? | Clearer service, downtime, proposed-cost and approval records |
+| Operations owner | Can this fit the team's existing system and device workflow? | An acceptable integrated workflow at an agreed implementation/support cost |
 
-The focused workflow is the selected portfolio scope because it demonstrates a complete operational decision. Whether it justifies adoption in a real business would require that business's costs, systems, and measured baseline.
+## Implemented evidence
 
-### Value and cost model
+- Technician home with three fictional orders and stock repair photography.
+- Nine explicit rescheduling reasons, original/revised Toronto appointments, requester, recorder, notes and confirmation.
+- Twenty-five work/issue update types with client-linked retained versions.
+- Explicit work, diagnosis, parts, next action, urgency, client impact, downtime, proposed CAD cost and reported notification/authorization.
+- Optional English/French browser dictation with review before insertion and explicit save. Actual microphone acceptance remains pending.
+- Browser-local storage, validated JSON recovery and concise event exports. Identity remains self-declared.
 
-Potential value comes from avoiding unnecessary rework and overtime, using available qualified capacity, and delivering more accepted units on time. These are hypotheses to evaluate, not achieved benefits.
+A November 1 browser check retained the October 30 booking after moving REP-001 to November 3 at 10:00 Toronto. Manually entered fictional preview text entered the work field after review and then saved as a client-linked issue with a CAD185 proposed estimate and pending authorization. No real repair, message, approval, charge or speech transcription occurred.
 
-Calculate scenario net benefit as additional revenue from accepted deliverables plus reductions in direct costs and modeled contractual charges, less added intervention costs and implementation/run costs. Use the same revenue recognition rule in both scenarios. Count each cost once: overtime and rework savings must not also be added separately when already included in direct cost differences. Show implementation and ongoing costs separately, and disclose that overhead and real client adoption are outside the initial simulation.
+## Commercial options
 
-No monetary ROI or percentage improvement is claimed before the model is implemented and validated. Any later payback estimate must use explicit cost assumptions and a positive modeled recurring benefit.
+| Option | When it may fit | Constraint |
+| --- | --- | --- |
+| Improve the existing service platform configuration | Current software already supports the required history and reports | Verify actual workflow and adoption before proposing another application |
+| Add a focused technician reporting/history layer | The buyer wants a specific gap addressed around its current dispatch system | Requires integration, verified users and clear data ownership |
+| Replace the service-management platform | The buyer explicitly wants a broad replacement | Outside this prototype's scope; would need order intake, dispatch, inventory, billing and production controls |
 
-### Evaluation and acceptance
+The recommended first offer is a focused paid pilot or custom module after discovery. Interest, budget, buying authority and deployment requirements must be confirmed with each prospect. Avoid promising replacement of an established field-service platform.
 
-Compare baseline and intervention runs using the same demand, starting state, and external incident schedule. Compare on-time delivery, accepted volume, first-pass acceptance, QA backlog age, and cost per accepted unit. Include an outage, a staffing shortage, and a QA bottleneck; show cases where reassignment cannot resolve the problem. A successful demonstration explains the constraint, permits only valid actions, preserves an audit trail, and produces reproducible metrics. An intervention is not assumed to improve every metric.
+## Measurement and economics
 
+Establish a typed-report baseline and compare similar jobs by language and complexity. Include review/correction time, report completeness, factual corrections, dispatcher clarification requests, rebooking reasons and technician acceptance. Agree targets with the buyer before a pilot. No target percentage, measured time savings or ROI is claimed.
 
-## Implemented demonstration and simulated evidence
+Calculate pilot net value from verified labor time released and agreed avoided administrative costs, less implementation, integration, hosting, speech-provider charges, support and human review costs. Prevent double counting. Benefits remain hypothetical until actual measurements support them.
 
-The first release is a functional browser application with 60 fictional workers, three client projects, six operational workspaces, assignment rules, capacity forecasts, an audit trail and CSV reporting. It uses deterministic snapshots and scenario calculations; the originally proposed 90-day event model is not implemented.
+## Pilot prerequisites and decision gate
 
-In the checked retail scenario, a qualified collector alone leaves projected delivery at 320 against 340 committed units because QA remains the constraint. Adding one QA block after that assignment raises projected accepted delivery to 341. Across the portfolio, projected output rises from 1,062 to 1,083 units and modeled remaining-window direct cost rises by $168. These are reproducible simulated outcomes, not actual client improvements. See VALIDATION.md for scope and assumptions.
+Current three-order, browser-local data is a demonstration. A real team pilot needs actual order intake, authenticated roles, server-side client isolation, durable shared records and concurrency handling. Validate English/French microphones and mobile devices, backup/restore, data retention and the buyer's integrations. The buyer must approve collection and use of any real customer data. See PRODUCT-READINESS.md and the AI strategy document for the full gate.
 
+## Historical staffing case
+
+The original v1.0 example modeled 60 recording workers and three collection projects. A collector plus QA intervention changed projected retail output from 320 to 341 units and modeled remaining-window cost by USD168. Those deterministic recording-simulation figures are historical portfolio evidence. They do not establish repair-service productivity, current CAD pricing, customer savings or current commercial readiness. Earlier source, media and closeout remain historical records.

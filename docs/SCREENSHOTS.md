@@ -1,4 +1,21 @@
-# FieldOps v1.2.0 — Current Screenshot Evidence
+# FieldOps v1.3.0 — Current Screenshot Evidence
+
+Captured November 1, 2026 from the exact current GitHub v1.3.0 source. These are fictional demonstration states. No ChatGPT chrome or real customer data appears.
+
+| File | Evidence and capture state |
+| --- | --- |
+| SS1_FieldOps_v1_3_0_Technician_Home.jpg | Home with three scheduled repair visits, one pending confirmation and credited stock repair imagery before this audit's reschedule |
+| SS2_FieldOps_v1_3_0_Appointment_History.jpg | REP-001 original October 30 09:00 booking retained beside the November 3 10:00 revision, Client unavailable reason, operator and recorded confirmation |
+| SS3_FieldOps_v1_3_0_Reviewed_Report_Preview.jpg | Manually typed fictional preview, English/French language control, explicit insertion and typing fallback. The HTTP preview blocks Start dictation; no audio or successful speech conversion is claimed |
+| SS4_FieldOps_v1_3_0_Client_Work_History.jpg | Saved ISS-001 version 1 for CLIENT-01: work, findings, replacement pump, next action, equipment unusable, 1,440 minutes downtime, CAD185 proposed cost and pending authorization. Unsaved follow-up form text visible above the journal is not another saved version |
+
+The browser audit inserted manually entered preview text into Work performed and explicitly saved the first issue record. Successive history preservation remains covered by automated tests. The screenshot does not prove a second browser-saved issue version, actual microphone quality, real approval, client contact or any purchase/charge.
+
+Files are under screenshots/v1.3.0/. Earlier screenshots are preserved below and in versioned folders, without relabeling them as current. The presentation PDF/PPTX remains historical v1.0.0 material.
+
+---
+
+# FieldOps v1.2.0 — Historical Screenshot Evidence
 
 Captured October 29, 2026 from the current v1.2.0 browser preview. All client/work records are simulated. The gallery represents different points in the same demonstration, not real service work.
 
@@ -43,3 +60,4 @@ These are simulated model outcomes, including an adverse net output change. They
 ## Historical evidence
 
 The earlier six-screen gallery and presentation remain preserved in the exact v1.0.0 release branch. They depict the earlier design and should not be used as v1.1.0 screenshots. No historical screenshot was overwritten or relabeled.
+

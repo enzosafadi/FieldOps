@@ -16,6 +16,7 @@ Dictation is stopped when navigating to another workspace, changing the selected
 
 ## Acceptance and measurement
 
-Automated controller tests cover review-before-insertion, deduplication, append behavior, overflow, permission denial, cleanup, retry and unsupported-browser fallback. Browser integration could not run because the test browser download failed. Actual microphone accuracy, accents, noisy workspaces and English/French provider availability require a manual device trial.
+Automated controller tests cover review-before-insertion, deduplication, append behavior, overflow, permission denial, cleanup, retry and unsupported-browser fallback. The original release browser attempt failed because the browser download failed. A November 1 follow-up inspected the controls and verified manually entered preview insertion plus explicit report save; the HTTP preview blocks live dictation. Actual microphone accuracy, accents, noisy workspaces and English/French provider availability require a manual device trial.
 
 Pilot KPI: compare active report composition plus review time against typed reporting while checking completeness, factual corrections and technician acceptance. No timer or measured savings is claimed in this release.
+

@@ -54,3 +54,13 @@ Run `node --test tests/*.test.mjs`. Added speech controller cases cover reviewed
 ## Data-readiness requirements review — November 1, 2026
 
 [DATA-READINESS.md](DATA-READINESS.md) maps existing validation to five data-quality dimensions and defines future acceptance cases. Documentation was checked against service-issues.mjs and existing tests; no new runtime behavior or new test execution is claimed by this documentation change. Current v1.3.0 suite previously passed 36 entries. Factual accuracy, source freshness and authorized model retrieval remain unverified/unimplemented.
+
+
+
+## November 1, 2026 — Current repository audit
+
+Reran node --test tests/*.test.mjs against the exact current GitHub v1.3.0 source: 36 passing entries, no failures. Asset Git blob hashes matched current source.
+
+Browser checks: current Home rendered; original October 30 appointment survived a confirmed November 3 10:00 reschedule with Client unavailable reason; manually entered fictional preview text inserted only after review; explicit save produced client-linked ISS-001 v1 with CAD185 proposed cost and pending authorization. No real customer, microphone, purchase, charge or client communication occurred. A second follow-up issue save was not performed in this audit. Historical/successive-version preservation remains covered by the automated suite.
+
+The preview URL uses HTTP terminal.local, so its security-context check disables Start dictation. The current report controls and manual review path were inspected, but actual microphone/browser-provider acceptance remains pending. Current screenshot labels document this boundary. No full mobile device or multiuser test was performed.

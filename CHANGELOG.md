@@ -4,6 +4,8 @@ Product versions describe the FieldOps application. They are separate from Sites
 
 ## 1.3.0 — November 1, 2026
 
+Repository evidence audit: aligned introduction, business case, delivery status, pilot-readiness matrix and ADLC with the technician workflow; added current v1.3.0 SS1–SS4. Preserved old closeout/media as historical evidence. Reran 36 automated entries and inspected the manual reviewed-report path in the browser; live microphone acceptance remains pending. Documentation/media only, no application-version change.
+
 Strategy documentation: consolidated reporting requirements, success measures, cloud/data/access foundations and the development-to-retirement operating lifecycle in docs/AI-STRATEGY-AND-OPERATING-MODEL.md. Linked from README and ADLC. Documentation only; no deployment or product-version change.
 
 Documentation follow-up: added five-dimension data readiness requirements and future grounding acceptance criteria, clarified implemented versus planned capabilities, and corrected current ADLC release metadata. Application behavior unchanged.
@@ -61,4 +63,5 @@ Browser-local simulated prototype. Operator names are self-declared, no shared d
 ## 1.0.0 — October 28, 2026
 
 Initial six-workspace portfolio prototype: Overview, Workforce, Quality, Incidents, Scenarios and Reports. Included 60 fictional workers, three project snapshots, eligibility checks, reserve staffing/QA, connectivity stress, incident coordination, plain-text intervention history, browser-local persistence, CSV reporting, documentation and presentation assets. Commercial team deployment was outside scope.
+
 

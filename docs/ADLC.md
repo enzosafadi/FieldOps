@@ -12,7 +12,7 @@ The owner supplies requirements and acceptance. AI assistance inspected source, 
 
 Product versions are independent of Site deployment numbers, backup format version 1 and internal workspace schema version 2. VERSION and the UI now identify v1.3.0. The exact previous application baselines remain in releases/v1.0.0 and releases/v1.1.0. Earlier galleries and presentations retain their historical identities. Historical v1.2.0 SS1–SS3 are in screenshots/v1.2.0; reproduction details distinguish the simulated states shown.
 
-No old screenshot is overwritten or relabeled as new evidence. CHANGELOG.md and releases/V1.2.0.md record additions and limitations. GitHub source is pushed before deploying the matching archive; preserve owner-private hosting.
+No old screenshot is overwritten or relabeled as new evidence. CHANGELOG.md and releases/V1.3.0.md record current additions and limitations. GitHub source is pushed before deploying the matching archive; preserve owner-private hosting.
 
 ## 3. Requirements and validation traceability
 
@@ -74,3 +74,13 @@ Apply accuracy, relevance, timeliness, cleanliness and availability checks to te
 ## Consolidated AI strategy and operating model — November 1, 2026
 
 [AI-STRATEGY-AND-OPERATING-MODEL.md](AI-STRATEGY-AND-OPERATING-MODEL.md) consolidates previously stated reporting goals and data requirements with cloud setup, access boundaries, development, testing, monitoring, cost controls and retirement. It records current implementation versus proposed capabilities, pilot KPIs, ownership and decision gates. Targets, provider selection and production ownership remain to be established; no additional runtime behavior or test execution is claimed.
+
+
+
+## November 1, 2026 — Repository and evidence audit
+
+No application behavior or product-version change. Current introduction, business case, closeout/readiness and screenshot references now match v1.3.0. The original v1.0 closeout is preserved as historical evidence. Real customer adoption and benefits are unmeasured.
+
+All 36 automated entries passed again. Browser checks confirmed current Home, original/revised appointment retention, manual preview insertion and explicit issue save. The HTTP preview blocks live dictation, so microphone quality remains pending. A second browser-saved issue version was not tested in this audit; automated history tests remain the evidence for that behavior. SS1–SS4 are current captures with explicit state labels.
+
+Commercial gate: use PRODUCT-READINESS.md to confirm workflow demand, live-device acceptance, verified roles, authorized shared records, real order intake, integration boundaries and measured pilot results before production claims.
