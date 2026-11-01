@@ -60,3 +60,9 @@ The existing public/private repositories retain source, version notes and eviden
 Before a real customer pilot: implement verified roles and client isolation in shared storage, server timestamps/concurrency/retention, validated real order intake, attachments when required, scheduling availability/travel rules, approved billing/inventory integrations, and task-to-delivery reconciliation. No other project is upgraded as part of this release.
 
 [Lifecycle and repair/client-impact flowcharts](FLOWCHARTS.md) · [Usage and scope](REPAIRS-AND-CLIENT-IMPACT.md) · [Validation](VALIDATION.md)
+
+
+
+## v1.3.0 — Speech-to-text change record
+
+Requirement: reduce technician typing through optional English/French dictation. Design: isolated speech adapter, editable preview and explicit insert/save. Implementation: browser recognition with no audio storage or credentials. Verification: 36 automated tests pass (including six speech controller cases); browser integration was blocked by an unavailable browser binary and failed download, and real-device microphone acceptance remains pending. Release: v1.3.0, retaining earlier release documentation and existing issue schema. Review privacy and provider suitability before real client use.

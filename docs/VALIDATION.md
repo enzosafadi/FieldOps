@@ -44,3 +44,9 @@ Browser preview checks verified workspace JSON download, file selection, validat
 `node --test tests/*.test.mjs`: 30 entries passed (original model assertion file plus 29 feature cases). Eight rescheduling cases cover original/revised slots, requester/recorder/confirmation, repeated changes, invalid/past/unchanged requests, conflicts, history consistency, migration, daylight-saving gaps/overlaps and long notes. Eight service-issue cases cover exact client linkage, versioned work/impact, the expanded types, emergency impact requirements, cross-client rejection, invalid estimates/notes, history discontinuity and absence of implicit appointment/financial actions. Existing model/workflow/recovery checks passed.
 
 Browser preview verified a client-requested appointment change, retained original booking, operator attribution and confirmation. Technician issue creation and subsequent replacement update retained both CAD185/Pending and CAD195/Approved-as-recorded versions. Emergency attention appears on Home and links to the client's repair. Appointment/issue histories survived reload. Both sourced images rendered and three current screenshots were visually inspected. Full mobile viewport QA, real multiuser concurrency, protected backend retention and external client integrations remain unverified/unimplemented.
+
+
+
+## v1.3.0 — Speech reporting validation
+
+Run `node --test tests/*.test.mjs`. Added speech controller cases cover reviewed insertion, duplicate events, length rejection, permission recovery, cleanup, unsupported browsers and multiple sessions. Real microphone transcription and language quality require manual acceptance; automated recognition events do not establish acoustic accuracy.

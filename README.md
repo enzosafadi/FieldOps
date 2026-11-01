@@ -1,13 +1,13 @@
 # FieldOps — Technician Work & Operations
 
-**Current release: v1.2.0 · October 29, 2026**  
+**Current release: v1.3.0 · November 1, 2026**  
 Working browser prototype with simulated records; owner acceptance pending.
 
 FieldOps now puts a technician's repair day first: appointments, client-requested changes, documented work, emergencies, urgent replacements and the consequences for each client. Earlier staffing/quality/delivery workspaces remain available as a separate deterministic simulation.
 
 [Open owner-private app](https://fieldops-ai.enzo-safadi.chatgpt.site/) · [ADLC](docs/ADLC.md) · [Changelog](CHANGELOG.md) · [v1.2.0 notes](docs/releases/V1.2.0.md) · [Repair/client-impact guide](docs/REPAIRS-AND-CLIENT-IMPACT.md) · [Flowcharts](docs/FLOWCHARTS.md) · [Validation](docs/VALIDATION.md)
 
-## Current screenshots — v1.2.0
+## Prior release screenshots — v1.2.0
 
 ### SS1 — Technician home
 
@@ -28,6 +28,10 @@ The original booking remains alongside the client's revised appointment, reason,
 The second update retains the first: CAD185/Pending and CAD195/Approved-as-recorded remain in the same client's history. These are fictional estimates and reported approval statuses, not real invoices or verified authorizations.
 
 [Exact capture states and reproduction](docs/SCREENSHOTS.md) · [Image sources and credits](docs/ASSET-CREDITS.md)
+
+## What v1.3.0 adds
+
+Voice-assisted technician reporting in English and French. Dictate into an editable preview, select a report field, insert reviewed text, then save the technician update. Browser support and microphone permission are required; typing stays available. [Voice reporting guide](docs/VOICE-REPORTING.md) · [v1.3.0 notes](docs/releases/V1.3.0.md). Existing screenshots and presentation describe v1.2.0.
 
 ## What v1.2.0 adds
 
@@ -70,3 +74,4 @@ No API key or dependency install is required. [Architecture](docs/ARCHITECTURE.m
 Browser-local simulated prototype with three repair orders and three service technicians. No arbitrary real customer/order creation or import, attachments, verified team identities, shared protected storage, real parts stock, billing/purchasing, live client messaging or production integrations. Operator names and recorded approvals are self-declared. Estimates are per issue and are not summed into invoices. Generic CSV exports concise issue summaries; complete findings/impact history is in the client journal and JSON backups. Full mobile viewport and real multiuser validation remain pending.
 
 All people, clients, work, estimates and outcomes are fictional. FieldOps uses deterministic rules; the earlier example industry's AI recordings do not imply the app runs an autonomous AI model.
+

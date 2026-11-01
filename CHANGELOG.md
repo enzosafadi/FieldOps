@@ -2,6 +2,14 @@
 
 Product versions describe the FieldOps application. They are separate from Sites deployment version numbers, JSON backup format version 1, and internal workspace schema version 2.
 
+## 1.3.0 — November 1, 2026
+
+- English (Canada) and French (Canada) voice dictation in Repairs → Technician work & client impact.
+- Editable transcript preview, explicit insertion into work/findings/parts/next action/client-impact fields, and unchanged technician approval/save workflow.
+- Browser speech recognition with permission, connection, unsupported-browser and length-limit handling; typing remains available.
+- Microphone aborted on workspace navigation or hidden page. FieldOps stores no audio; browser speech providers may process audio remotely.
+- Existing saved records and version history preserved. No Azure credentials, uploaded-recording transcription, automated report generation or measured time-saving claims.
+
 ## 1.2.0 — October 29, 2026
 
 ### Added
@@ -49,3 +57,4 @@ Browser-local simulated prototype. Operator names are self-declared, no shared d
 ## 1.0.0 — October 28, 2026
 
 Initial six-workspace portfolio prototype: Overview, Workforce, Quality, Incidents, Scenarios and Reports. Included 60 fictional workers, three project snapshots, eligibility checks, reserve staffing/QA, connectivity stress, incident coordination, plain-text intervention history, browser-local persistence, CSV reporting, documentation and presentation assets. Commercial team deployment was outside scope.
+

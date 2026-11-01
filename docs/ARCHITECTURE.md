@@ -51,3 +51,9 @@ Existing browser saves migrate to three clearly labeled simulated starting work 
 `repairs.mjs` validates Toronto appointment windows, records nine reschedule reasons, and replays appointment history against current orders. `service-issues.mjs` implements 25 update types and versioned work/client-impact records with stable repair/client links. `repair-ui.mjs` renders Home and Repairs; `service-issue-ui.mjs` renders the technician work/impact journal. Stock images are bundled under dist/assets with credits.
 
 The three fictional repair orders and three technicians are separate from the earlier 60-worker recording simulation. Its operational metrics remain fixed simulated aggregates. Validation migrates v1.1 saves, preserves repair/issue records across staffing reset, and includes them in JSON backup. Generic workflow CSV contains concise event summaries; complete findings/impact versions are in JSON and the client journal. Storage and identity remain browser-local/self-declared.
+
+
+
+## v1.3.0 — Voice input adapter
+
+`speech-reporting.mjs` renders and binds voice controls beside the technician issue form. The browser speech provider supplies final transcripts to a temporary preview. Explicit insertion appends text to the existing validated form; saving uses the unchanged recordServiceIssue path. Rendering disposes the old recognizer. No audio, speech credentials or new persisted schema are introduced.

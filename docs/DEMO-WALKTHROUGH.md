@@ -9,3 +9,9 @@ All names, organizations and outcomes are simulated.
 5. Open Reports. Explain accepted output versus projected output and download the CSV. Use Reset all demo changes in Scenarios to restore the baseline.
 
 The project demonstrates operational modeling, eligibility checks, traceable decisions and a complete manager workflow. It makes no claim of AI-powered forecasting or actual client savings.
+
+
+
+## v1.3.0 — Voice reporting
+
+Open Repairs, choose dictation language, start/stop, edit preview, insert into a chosen report field, then save the completed technician update. Try denied microphone permission and typed fallback. See VOICE-REPORTING.md.
