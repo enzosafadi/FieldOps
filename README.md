@@ -1,5 +1,9 @@
 # FieldOps — Technician Work & Operations
 
+## Project roadmap — concept to sale
+
+![Current project timeline](docs/project-roadmap.svg)
+
 **Current release: v1.3.0 · November 1, 2026**  
 Working browser prototype with simulated records; owner acceptance pending.
 
