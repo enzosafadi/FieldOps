@@ -90,3 +90,7 @@ All people, clients, work, estimates and outcomes are fictional. FieldOps uses d
 
 [Five data-quality checks and implementation gaps](docs/DATA-READINESS.md): accuracy, relevance, timeliness, cleanliness and availability. Existing structural validation and technician review are implemented; generative report grounding, factual verification, freshness monitoring and shared permissions remain planned.
 
+
+## Repository verification
+
+[Current scoped verification results](VERIFICATION.md). Run `python tools/verify_repository.py --visibility public`.

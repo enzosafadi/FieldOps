@@ -1,0 +1,30 @@
+{
+  "visibility": "public",
+  "test_commands": [
+    [
+      "node",
+      "tests/model.test.mjs"
+    ],
+    [
+      "node",
+      "tests/repairs.test.mjs"
+    ],
+    [
+      "node",
+      "tests/service-issues.test.mjs"
+    ],
+    [
+      "node",
+      "tests/speech-reporting.test.mjs"
+    ],
+    [
+      "node",
+      "tests/workflow.test.mjs"
+    ],
+    [
+      "node",
+      "tests/workspace.test.mjs"
+    ]
+  ],
+  "scope": "Executable local tests"
+}
